@@ -15,7 +15,7 @@ async function bootstrap() {
 
   // Global Validation Pipe
   app.useGlobalPipes(new ValidationPipe(validationOptions));
-  await app.listen(3010, '0.0.0.0');
+  await app.listen(10000);
   console.log(`Application is running on: ${await app.getUrl()}`);
 }
 bootstrap();
